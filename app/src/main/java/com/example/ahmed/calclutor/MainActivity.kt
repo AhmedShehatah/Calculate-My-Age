@@ -16,19 +16,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var numbrith = findViewById<EditText>(R.id.txtsum)
-        var btncalac = findViewById<Button>(R.id.btnclac)
-        var txtage = findViewById<TextView>(R.id.txtage)
-
-
-
-        btncalac.setOnClickListener {
+        btnclac.setOnClickListener {
          try {
-
 
                 var sbt = SimpleDateFormat("yyyy")
                 var nowyear = Integer.parseInt(sbt.format(Date()))
-                var brithdate = Integer.parseInt(numbrith.text.toString())
+                var brithdate = Integer.parseInt(txtsum.text.toString())
                 var resuly = nowyear - brithdate
                 txtage.text = resuly.toString()
          }catch (ex:Exception){
