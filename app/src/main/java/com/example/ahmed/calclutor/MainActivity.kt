@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
                 var resuly = nowyear - brithdate
                 txtage.text = resuly.toString()
          }catch (ex:Exception){
-             Toast.makeText(this,"no number entered",Toast.LENGTH_SHORT).show()
+             Toast.makeText(this,"Enter Number",Toast.LENGTH_SHORT).show()
          }
 
 
